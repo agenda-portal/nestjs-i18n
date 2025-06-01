@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "noLib": false,
+    "noUncheckedIndexedAccess": true,
+    "outDir": "dist",
+    "removeComments": false,
+    "rootDir": "lib",
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2021",
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "lib/**/*.ts"
+  ]
+}

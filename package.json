@@ -14,7 +14,9 @@
   "devDependencies": {
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-angular": "19.8.1",
+    "@types/node": "^22.15.29",
     "husky": "9.1.7",
-    "prettier": "3.5.3"
+    "prettier": "3.5.3",
+    "typescript": "^5.8.3"
   }
 }
