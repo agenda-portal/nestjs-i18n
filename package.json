@@ -1,0 +1,22 @@
+{
+  "name": "@agenda-portal/nestjs-i18n",
+  "version": "0.0.0",
+  "description": "Internationalization (i18n) module for NestJS based on the i18next package",
+  "author": "Slate Hayes",
+  "license": "MIT",
+  "keywords": [
+    "nestjs",
+    "i18n"
+  ],
+  "scripts": {
+    "format": "prettier --write \"lib/**/*.ts\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-angular": "19.8.1",
+    "@types/node": "^22.15.29",
+    "husky": "9.1.7",
+    "prettier": "3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
