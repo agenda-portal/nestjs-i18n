@@ -1,0 +1,6 @@
+.husky/
+lib/
+.nvmrc
+.prettierrc
+commitlint.config.mjs
+tsconfig.json
