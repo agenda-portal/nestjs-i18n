@@ -8,15 +8,27 @@
     "nestjs",
     "i18n"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "format": "prettier --write \"lib/**/*.ts\""
+    "build": "rimraf -rf dist && tsc",
+    "format": "prettier --write \"lib/**/*.ts\"",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "i18next": "25.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-angular": "19.8.1",
-    "@types/node": "^22.15.29",
+    "@nestjs/common": "11.1.2",
+    "@types/node": "22.15.29",
     "husky": "9.1.7",
     "prettier": "3.5.3",
-    "typescript": "^5.8.3"
+    "rimraf": "6.0.1",
+    "typescript": "5.8.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.1.2"
   }
 }
