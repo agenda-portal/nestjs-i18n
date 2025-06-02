@@ -13,14 +13,14 @@ npm install @agenda-portal/nestjs-i18n
 1. Define your translations
 
 ```json
-// i18n/en.json
 {
   "default": {
     "hello": "world!"
   }
 }
+```
 
-// i18n/pt.json
+```json
 {
   "default": {
     "hello": "mundo"
@@ -31,7 +31,6 @@ npm install @agenda-portal/nestjs-i18n
 2. Export the translations
 
 ```typescript
-// i18n/index.ts
 import en from "./en.json";
 import pt from "./pt.json";
 
@@ -44,7 +43,6 @@ export const translations = {
 3. Declare a module augmentation for the translation types
 
 ```typescript
-// i18n/index.ts
 import en from "./en.json";
 import pt from "./pt.json";
 
@@ -53,7 +51,7 @@ export const translations = {
   pt,
 };
 
-declare module "@agenda-portal/i18n" {
+declare module "@agenda-portal/nestjs-i18n" {
   interface I18n {
     translations: typeof translations;
   }
